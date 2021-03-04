@@ -1,0 +1,59 @@
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.tab-bgdark{
+    background-color: #DCA123;
+}
+
+.tab-dark{
+    color: #DCA123;
+}
+
+.tab-bglight{
+    background-color: #EDC84F;
+}
+
+.tab-light{
+    color: #EDC84F;
+}
+
+.tab-bgbase{
+    background-color: #3F454C;
+}
+
+.tab-base{
+    color: #3F454C;
+}
+
+.tab-bgcomp1{
+    background-color: #4C443F;
+}
+
+.tab-comp1{
+    color: #4C443F;
+}
+
+.tab-bgcomp2{
+    background-color: #9B7027;
+}
+
+.tab-comp2{
+    color: #9B7027;
+}
+
+.tab-bgcomp3{
+    background-color: #808991;
+}
+
+.tab-comp3{
+    color: #808991;
+}
+
+.tab-bgcomp4{
+    background-color: #80211A;
+}
+
+.tab-comp4{
+    color: #80211A;
+}
