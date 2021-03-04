@@ -16,8 +16,10 @@
 
 .nav-border1{
     background-color:#DCA123 !important;
+    transition: all ease-in-out;
 }
 
 .nav-border1:hover{
     background-color:#EDC84F !important;
+    transition: all ease-in-out;
 }
