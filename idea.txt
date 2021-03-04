@@ -1,0 +1,4 @@
+All links to have FA images.
+TAB link to have tab logo next to it.
+Footer
+footer branding x dancodes
