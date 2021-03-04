@@ -1,59 +1,59 @@
 .lato{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
 }
 
 .tab-bgdark{
-    background-color: #DCA123;
+    background-color: #DCA123 !important;
 }
 
 .tab-dark{
-    color: #DCA123;
+    color: #DCA123 !important;
 }
 
 .tab-bglight{
-    background-color: #EDC84F;
+    background-color: #EDC84F !important;
 }
 
 .tab-light{
-    color: #EDC84F;
+    color: #EDC84F !important;
 }
 
 .tab-bgbase{
-    background-color: #3F454C;
+    background-color: #3F454C !important;
 }
 
 .tab-base{
-    color: #3F454C;
+    color: #3F454C !important;
 }
 
 .tab-bgcomp1{
-    background-color: #4C443F;
+    background-color: #4C443F !important;
 }
 
 .tab-comp1{
-    color: #4C443F;
+    color: #4C443F !important;
 }
 
 .tab-bgcomp2{
-    background-color: #9B7027;
+    background-color: #9B7027 !important;
 }
 
 .tab-comp2{
-    color: #9B7027;
+    color: #9B7027 !important;
 }
 
 .tab-bgcomp3{
-    background-color: #808991;
+    background-color: #808991 !important;
 }
 
 .tab-comp3{
-    color: #808991;
+    color: #808991 !important;
 }
 
 .tab-bgcomp4{
-    background-color: #80211A;
+    background-color: #80211A !important;
 }
 
 .tab-comp4{
-    color: #80211A;
+    color: #80211A !important;
 }
