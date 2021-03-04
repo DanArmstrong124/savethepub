@@ -5,3 +5,11 @@
 .tab-btn:hover{
     background-color:#EDC84F !important;
 }
+
+.tab-btn-invert{
+    background-color:#3F454C !important;
+}
+
+.tab-btn-invert:hover{
+    background-color:#808991 !important;
+}
