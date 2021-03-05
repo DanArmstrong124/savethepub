@@ -18,9 +18,8 @@ setInterval(function() {
   var distanceStart = now - startDate;
   document.getElementById("test").innerHTML = distanceStart;
 
-  var secondsbetweenGarden = 3628800;
-  var distanceBetweenGarden = distanceStart + secondsbetweenGarden;
-  var percentageBetweenGarden = (distanceStart / distanceBetweenGarden);
+  var secondsbetweenGarden = 3628800000;
+  var percentageBetweenGarden = (distanceStart / secondsbetweenGarden) * 100;
   $('#gardenprogress').attr('aria-valuenow', percentageBetweenGarden).css('width', percentageBetweenGarden+'%');
 
 
