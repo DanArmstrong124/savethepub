@@ -2,7 +2,7 @@ var garden = $( "#beergarden" );
 var pub = $( "#pub" );
 var percent = $( "#percent" );
 
-var gardenDate = new Date("Mar 05, 2021 09:32:00").getTime();
+var gardenDate = new Date("Apr 12, 2021 00:00:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
@@ -15,7 +15,7 @@ setInterval(function() {
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
 
-  var per = 0.0000001;
+  var per = 0.1;
   var calc = per / distanceGarden;
 
     document.getElementById("percent").innerHTML = distanceGarden;
