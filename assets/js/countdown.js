@@ -15,13 +15,6 @@ setInterval(function() {
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
 
-  var perc = 0.1;
-  var calc = (perc / distanceGarden) * 100;
-
-    document.getElementById("percent").innerHTML = distanceGarden;
-    document.getElementById("per").innerHTML = perc;
-    document.getElementById("calc").innerHTML = calc;
-
   // Time calculations for days, hours, minutes and seconds
 
   // GARDEN
@@ -29,6 +22,14 @@ setInterval(function() {
   var hoursGarden = Math.floor((distanceGarden % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutesGarden = Math.floor((distanceGarden % (1000 * 60 * 60)) / (1000 * 60));
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
+
+  var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60);
+  var perc = 0.1;
+  var calc = (perc / distanceGarden) * 100;
+
+    document.getElementById("percent").innerHTML = distanceGarden;
+    document.getElementById("per").innerHTML = perc;
+    document.getElementById("calc").innerHTML = timeGarden;
   
   // PUB
   var daysPub = Math.floor(distancePub / (1000 * 60 * 60 * 24));
