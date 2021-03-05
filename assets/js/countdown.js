@@ -2,7 +2,7 @@ var garden = $( "#beergarden" );
 var pub = $( "#pub" );
 var percent = $( "#percent" );
 
-var gardenDate = new Date("Apr 12, 2021 00:00:00").getTime();
+var gardenDate = new Date("Mar 12, 2021 00:00:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
 var startDate = new Date("Mar 01, 2021 00:00:00").getTime();
 
@@ -19,7 +19,7 @@ setInterval(function() {
 
   var secondsbetweenGarden = 3628800;
   var distanceBetweenGarden = distanceStart + secondsbetweenGarden;
-  var percentageBetweenGarden = (distanceStart / distanceBetweenGarden) * 100;
+  var percentageBetweenGarden = (distanceStart / distanceBetweenGarden);
   $('#gardenprogress').attr('aria-valuenow', percentageBetweenGarden).css('width', percentageBetweenGarden+'%');
 
   // Time calculations for days, hours, minutes and seconds
