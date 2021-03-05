@@ -23,7 +23,7 @@ setInterval(function() {
 
   var secondsbetweenPub = 6652800000;
   var percentageBetweenPub = (distanceStart / secondsbetweenPub) * 100;
-  $('#gardenprogress').attr('aria-valuenow', percentageBetweenPub).css('width', percentageBetweenPub+'%');
+  $('#pubprogress').attr('aria-valuenow', percentageBetweenPub).css('width', percentageBetweenPub+'%');
 
 
   // Time calculations for days, hours, minutes and seconds
