@@ -24,10 +24,11 @@ setInterval(function() {
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
 
   var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60);
-  var calc = (perc / distanceGarden) * 100;
+  var calc = (0.1 / timeGarden) * 100;
 
-    document.getElementById("percent").innerHTML = distanceGarden;
-    document.getElementById("calc").innerHTML = timeGarden;
+   document.getElementById("percent").innerHTML = distanceGarden;
+   document.getElementById("calc").innerHTML = timeGarden;
+   document.getElementById("per").innerHTML = calc;
   
   // PUB
   var daysPub = Math.floor(distancePub / (1000 * 60 * 60 * 24));
