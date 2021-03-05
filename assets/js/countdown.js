@@ -15,7 +15,7 @@ setInterval(function() {
   // Find the distance between now and the count down date
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
-  var distanceStart = startDate + now;
+  var distanceStart = now - startDate;
 
   var distanceStartSeconds = Math.floor((distanceStart % (1000 * 60)) / 1000);
   document.getElementById("test").innerHTML = distanceStartSeconds;
