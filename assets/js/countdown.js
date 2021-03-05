@@ -26,7 +26,7 @@ setInterval(function() {
   var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60)+secondsPub;
   var calcGarden = (0.1 / timeGarden) * 100;
 
-  $('#gardenprogress').attr('aria-valuenow', calcGarden).css('width', calcGarden);
+  $('#gardenprogress').attr('aria-valuenow', calcGarden).css('width', calcGarden+'%');
   
   // PUB
   var daysPub = Math.floor(distancePub / (1000 * 60 * 60 * 24));
@@ -37,7 +37,7 @@ setInterval(function() {
   var timePub = (((((daysPub * 24)+hoursPub)*60)+minutesPub)*60)+secondsPub;
   var calcPub = (0.1 / timePub) * 100;
 
-  $('#pubprogress').attr('aria-valuenow', calcPub).css('width', calcPub);
+  $('#pubprogress').attr('aria-valuenow', calcPub).css('width', calcPub+'%');
 
   // GARDEN
   document.getElementById("beergarden").innerHTML = daysGarden + "d " + hoursGarden + "h "
