@@ -24,11 +24,9 @@ setInterval(function() {
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
 
   var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60);
-  var perc = 0.1;
   var calc = (perc / distanceGarden) * 100;
 
     document.getElementById("percent").innerHTML = distanceGarden;
-    document.getElementById("per").innerHTML = perc;
     document.getElementById("calc").innerHTML = timeGarden;
   
   // PUB
