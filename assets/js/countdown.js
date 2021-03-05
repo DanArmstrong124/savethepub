@@ -16,11 +16,14 @@ setInterval(function() {
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
   var distanceStart = now - startDate;
-  document.getElementById("test").innerHTML = distanceStart;
 
   var secondsbetweenGarden = 3628800000;
   var percentageBetweenGarden = (distanceStart / secondsbetweenGarden) * 100;
   $('#gardenprogress').attr('aria-valuenow', percentageBetweenGarden).css('width', percentageBetweenGarden+'%');
+
+  var secondsbetweenPub = 6652800000;
+  var percentageBetweenPub = (distanceStart / secondsbetweenPub) * 100;
+  $('#gardenprogress').attr('aria-valuenow', percentageBetweenPub).css('width', percentageBetweenPub+'%');
 
 
   // Time calculations for days, hours, minutes and seconds
@@ -36,11 +39,6 @@ setInterval(function() {
   var hoursPub = Math.floor((distancePub % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutesPub = Math.floor((distancePub % (1000 * 60 * 60)) / (1000 * 60));
   var secondsPub = Math.floor((distancePub % (1000 * 60)) / 1000);
-
-  var timePub = (((((daysPub * 24)+hoursPub)*60)+minutesPub)*60)+secondsPub;
-  var calcPub = (1 / timePub) * 100;
-
-  $('#pubprogress').attr('aria-valuenow', calcPub).css('width', calcPub+'%');
 
   // GARDEN
   document.getElementById("beergarden").innerHTML = daysGarden + "d " + hoursGarden + "h "
