@@ -23,7 +23,7 @@ setInterval(function() {
   var minutesGarden = Math.floor((distanceGarden % (1000 * 60 * 60)) / (1000 * 60));
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
 
-  var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60)+secondsPub;
+  var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60)+secondsGarden;
   var calcGarden = (0.1 / timeGarden) * 100;
 
   $('#gardenprogress').attr('aria-valuenow', calcGarden).css('width', calcGarden+'%');
