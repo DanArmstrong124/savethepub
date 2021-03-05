@@ -4,6 +4,7 @@ var percent = $( "#percent" );
 
 var gardenDate = new Date("Mar 05, 2021 10:25:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
+var startDate = new Date("Mar 01, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
 setInterval(function() {
@@ -14,6 +15,12 @@ setInterval(function() {
   // Find the distance between now and the count down date
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
+  var distanceStart = startDate + now;
+
+  var secondsbetweenGarden = 3628800;
+  var distanceBetweenGarden = distanceStart + secondsbetweenGarden;
+  var percentageBetweenGarden = (distanceStart / distanceBetweenGarden) * 100;
+  $('#gardenprogress').attr('aria-valuenow', percentageBetweenGarden).css('width', percentageBetweenGarden+'%');
 
   // Time calculations for days, hours, minutes and seconds
 
@@ -22,11 +29,6 @@ setInterval(function() {
   var hoursGarden = Math.floor((distanceGarden % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutesGarden = Math.floor((distanceGarden % (1000 * 60 * 60)) / (1000 * 60));
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
-
-  var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60)+secondsGarden;
-  var calcGarden = (distanceGarden / timeGarden) * 100;
-
-  $('#gardenprogress').attr('aria-valuenow', calcGarden).css('width', calcGarden+'%');
   
   // PUB
   var daysPub = Math.floor(distancePub / (1000 * 60 * 60 * 24));
