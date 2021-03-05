@@ -19,7 +19,7 @@ setInterval(function() {
 
   var secondsbetweenGarden = 3628800;
   var distanceBetweenGarden = distanceStart + secondsbetweenGarden;
-  var percentageBetweenGarden = (distanceStart / distanceBetweenGarden);
+  var percentageBetweenGarden = (distanceBetweenGarden / distanceStart);
   $('#gardenprogress').attr('aria-valuenow', percentageBetweenGarden).css('width', percentageBetweenGarden+'%');
 
   // Time calculations for days, hours, minutes and seconds
