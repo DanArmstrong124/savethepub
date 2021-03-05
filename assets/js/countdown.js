@@ -1,5 +1,6 @@
 var garden = $( "#beergarden" );
 var pub = $( "#pub" );
+var percent = $( "#percent" );
 
 var gardenDate = new Date("Apr 12, 2021 00:00:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
@@ -13,6 +14,8 @@ setInterval(function() {
   // Find the distance between now and the count down date
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
+
+    document.getElementById("percent").innerHTML = distanceGarden;
 
   // Time calculations for days, hours, minutes and seconds
 
