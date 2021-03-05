@@ -2,7 +2,7 @@ var garden = $( "#beergarden" );
 var pub = $( "#pub" );
 var percent = $( "#percent" );
 
-var gardenDate = new Date("Mar 05, 2021 10:15:00").getTime();
+var gardenDate = new Date("Mar 05, 2021 10:20:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
@@ -24,7 +24,7 @@ setInterval(function() {
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
 
   var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60)+secondsGarden;
-  var calcGarden = (0.1 / timeGarden) * 100;
+  var calcGarden = (1 / timeGarden) * 100;
 
   $('#gardenprogress').attr('aria-valuenow', calcGarden).css('width', calcGarden+'%');
   
@@ -35,7 +35,7 @@ setInterval(function() {
   var secondsPub = Math.floor((distancePub % (1000 * 60)) / 1000);
 
   var timePub = (((((daysPub * 24)+hoursPub)*60)+minutesPub)*60)+secondsPub;
-  var calcPub = (0.1 / timePub) * 100;
+  var calcPub = (1 / timePub) * 100;
 
   $('#pubprogress').attr('aria-valuenow', calcPub).css('width', calcPub+'%');
 
