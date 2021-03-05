@@ -15,11 +15,11 @@ setInterval(function() {
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
 
-  var per = 0.1;
-  var calc = per / distanceGarden;
+  var perc = 0.1;
+  var calc = (perc / distanceGarden) * 100;
 
     document.getElementById("percent").innerHTML = distanceGarden;
-    document.getElementById("per").innerHTML = per;
+    document.getElementById("per").innerHTML = perc;
     document.getElementById("calc").innerHTML = calc;
 
   // Time calculations for days, hours, minutes and seconds
