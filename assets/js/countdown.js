@@ -17,10 +17,14 @@ setInterval(function() {
   var distancePub = pubDate - now;
   var distanceStart = startDate + now;
 
+  var distanceStartSeconds = Math.floor((distanceStart % (1000 * 60)) / 1000);
+  document.getElementById("test").innerHTML = distanceStartSeconds;
+
   var secondsbetweenGarden = 3628800;
   var distanceBetweenGarden = distanceStart + secondsbetweenGarden;
-  var percentageBetweenGarden = (distanceBetweenGarden / distanceStart);
+  var percentageBetweenGarden = (distanceStart / distanceBetweenGarden);
   $('#gardenprogress').attr('aria-valuenow', percentageBetweenGarden).css('width', percentageBetweenGarden+'%');
+
 
   // Time calculations for days, hours, minutes and seconds
 
