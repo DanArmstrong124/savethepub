@@ -5,7 +5,7 @@ var gardenDate = new Date("Apr 12, 2021 00:00:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+setInterval(function() {
 
   // Get today's date and time
   var now = new Date().getTime();
@@ -40,13 +40,11 @@ var x = setInterval(function() {
 
   // GARDEN
   if (distanceGarden < 0) {
-    clearInterval(x);
     document.getElementById("beergarden").innerHTML = "ITS TIME AT THE BAR";
   }
 
   // PUB
   if (distancePub < 0) {
-    clearInterval(x);
     document.getElementById("pub").innerHTML = "ITS TIME AT THE BAR";
   }
 }, 1000);
