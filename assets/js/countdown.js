@@ -23,18 +23,21 @@ setInterval(function() {
   var minutesGarden = Math.floor((distanceGarden % (1000 * 60 * 60)) / (1000 * 60));
   var secondsGarden = Math.floor((distanceGarden % (1000 * 60)) / 1000);
 
-  var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60);
-  var calc = (0.1 / timeGarden) * 100;
+  var timeGarden = (((((daysGarden * 24)+hoursGarden)*60)+minutesGarden)*60)+secondsPub;
+  var calcGarden = (0.1 / timeGarden) * 100;
 
-   document.getElementById("percent").innerHTML = distanceGarden;
-   document.getElementById("calc").innerHTML = timeGarden;
-   document.getElementById("per").innerHTML = calc;
+  $('#gardenprogress').attr('aria-valuenow', calcGarden).css('width', calcGarden);
   
   // PUB
   var daysPub = Math.floor(distancePub / (1000 * 60 * 60 * 24));
   var hoursPub = Math.floor((distancePub % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutesPub = Math.floor((distancePub % (1000 * 60 * 60)) / (1000 * 60));
   var secondsPub = Math.floor((distancePub % (1000 * 60)) / 1000);
+
+  var timePub = (((((daysPub * 24)+hoursPub)*60)+minutesPub)*60)+secondsPub;
+  var calcPub = (0.1 / timePub) * 100;
+
+  $('#pubprogress').attr('aria-valuenow', calcPub).css('width', calcPub);
 
   // GARDEN
   document.getElementById("beergarden").innerHTML = daysGarden + "d " + hoursGarden + "h "
