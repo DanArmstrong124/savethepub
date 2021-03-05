@@ -16,9 +16,7 @@ setInterval(function() {
   var distanceGarden = gardenDate - now;
   var distancePub = pubDate - now;
   var distanceStart = now - startDate;
-
-  var distanceStartSeconds = Math.floor((distanceStart % (1000 * 60)) / 1000);
-  document.getElementById("test").innerHTML = distanceStartSeconds;
+  document.getElementById("test").innerHTML = distanceStart;
 
   var secondsbetweenGarden = 3628800;
   var distanceBetweenGarden = distanceStart + secondsbetweenGarden;
