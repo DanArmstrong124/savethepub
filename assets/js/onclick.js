@@ -6,6 +6,7 @@ button.click(function() {
     var tabimg = $( "#icon-img" );
     var stp = $( "#savethepub" );
     if (bntclicked === false) {
+        button.css("background-color", "red");
         $( "#icon-img" ).css("max-width", "70px");
         tabimg.css("top", "8%!important");
         tabimg.css("left", "21%!important");
