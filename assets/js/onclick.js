@@ -1,30 +1,19 @@
 var button = $( "#collapser" );
+var tabimg = $( "#icon-img" );
+var stp = $( "#savethepub" );
 
 var bntclicked = false;
 
 button.click(function() {
-    var tabimg = $( "#icon-img" );
-    var stp = $( "#savethepub" );
     if (bntclicked === false) {
-        button.css("background-color", "red");
-        $( "#icon-img" ).css("max-width", "70px");
-        tabimg.css("top", "8%!important");
-        tabimg.css("left", "21%!important");
-        tabimg.css("z-index", "0");
-
-        stp.css("top", "7%!important");
-        stp.css("font-size", "22px");
+        tabimg.css({"max-width":"70px", "top":"8%!important", "left":"21%!important", "z-index":"0"})
+        stp.css({"font-size":"22px", "top":"7%!important"})
 
         bntclicked = true;
     }
     else if (bntclicked === true) {
-        $( "#icon-img" ).css("max-width", "113px");
-        tabimg.css("top", "43%!important");
-        tabimg.css("left", "");
-        tabimg.css("z-index", "0");
-
-        stp.css("top", "84%!important");
-        stp.css("font-size", "22px");
+        tabimg.css({"max-width":"113px", "top":"43%!important", "left":"50%!important", "z-index":"0"})
+        stp.css({"font-size":"22px", "top":"84%!important"})
 
         bntclicked = false;
     }
