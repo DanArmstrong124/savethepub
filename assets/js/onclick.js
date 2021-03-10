@@ -6,6 +6,7 @@ var bntclicked = false;
 
 button.click(function() {
     if (bntclicked = false) {
+        alert("HI");
         tabimg.css("max-width", "70px");
         tabimg.css("top", "8%!important");
         tabimg.css("left", "21%!important");
@@ -17,6 +18,7 @@ button.click(function() {
         bntclicked = true;
     }
     if (bntclicked = true) {
+        alert("WHAT?");
         tabimg.css("max-width", "113px");
         tabimg.css("top", "43%!important");
         tabimg.css("left", "");
