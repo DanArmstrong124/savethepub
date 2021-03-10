@@ -9,3 +9,12 @@
 .nav-border1{
     border: 1px solid;
 }
+
+.modal-content{
+    height: 580px !important;
+}
+
+.modal-dialog{
+    max-width: 100000px !important;
+    margin: 3% !important;
+}
