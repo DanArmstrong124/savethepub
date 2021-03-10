@@ -1,12 +1,8 @@
 
 Petition link and info
 
-ADD Gov info on unemployed etc
-
 Footer
 footer branding x dancodes
-setup email service
-
-IFrame for signing (Not possible due to security detail)
+setup email service (OR REMOVE?)
 
 RSS FEED
