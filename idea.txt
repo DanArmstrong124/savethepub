@@ -1,8 +1,9 @@
 
 Petition link and info
 
-Footer
-footer branding x dancodes
 setup email service (OR REMOVE?)
 
 RSS FEED
+
+Footer
+footer branding x dancodes
