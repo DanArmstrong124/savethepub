@@ -3,6 +3,6 @@ Footer
 footer branding x dancodes
 setup email service
 
-IFrame for signing
+IFrame for signing (Not possible due to security detail)
 
 RSS FEED
