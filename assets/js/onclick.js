@@ -1,10 +1,10 @@
 var button = $( "#collapser" );
-var tabimg = $( "#icon-img" );
-var stp = $( "#savethepub" );
 
 var bntclicked = false;
 
 button.click(function() {
+    var tabimg = $( "#icon-img" );
+    var stp = $( "#savethepub" );
     if (bntclicked === false) {
         $( "#icon-img" ).css("max-width", "70px");
         tabimg.css("top", "8%!important");
