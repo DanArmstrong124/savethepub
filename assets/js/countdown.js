@@ -2,7 +2,7 @@ var garden = $( "#beergarden" );
 var pub = $( "#pub" );
 var percent = $( "#percent" );
 
-var gardenDate = new Date("Mar 12, 2021 18:45:00").getTime();
+var gardenDate = new Date("Apr 12, 2021 00:00:00").getTime();
 var pubDate = new Date("May 17, 2021 00:00:00").getTime();
 var startDate = new Date("Mar 01, 2021 00:00:00").getTime();
 
